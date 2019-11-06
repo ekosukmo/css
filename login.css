@@ -1,3 +1,174 @@
+ body {
+            background-color: #1c252c;
+            position: relative;
+            height: 90vh;
+            font-family: 'Clear Sans';
+            color: #E4E4E4;
+            font-size: 14px;
+            letter-spacing: 0.7px;
+            font-weight: normal;
+        }
+
+        #mainPanel {
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            text-align: center;
+            border-radius: 2px;
+            background: linear-gradient(179.59deg, #414E5A 0%, #283038 100%);
+            box-shadow: 0 1px 30px 0px rgba(97, 97, 97, 0.24);
+        }
+
+        #mainHead {
+            padding: 20px 60px 17px 60px;
+            border-bottom: 1px solid rgba(151,151,151,0.53);
+        }
+
+        #mainBody {
+            padding-top: 35px;
+        }
+
+        #mainBody > .field {
+            padding: 0px 25px;
+            margin-bottom: 18px;
+        }
+
+        input {
+            outline-color: #338db4;
+        }
+
+        #error > div {
+            background-color: rgba(223,69,69,0.45);
+            padding: 9px 12px;
+            text-align: left;
+            margin: 2px 25px 15px 25px;
+            color: #e4e4e4dd;
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding-right: 20px;
+            position: relative;
+        }
+
+        #logo {
+            width: 100%;
+            height: auto;
+            opacity: .9;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 7px;
+        }
+
+        input {
+            text-align: left;
+            width: 100%;
+            background-color: rgba(35,40,46,0.5);
+            color: #E4E4E4;
+            border: none;
+            padding: 6px 12px;
+            letter-spacing: 1px;
+            box-sizing: border-box;
+        }
+
+        #submitButton {
+            padding: 20px 25px 25px 25px;
+        }
+
+        #submitButton > input {
+            width: auto;
+            border-radius: 2px;
+            font-family: 'Clear Sans';
+            color: #E4E4E4cc;
+            background: linear-gradient(181.74deg, #566270 0%, #394249 100%);
+            padding: 7px 18px;
+            box-shadow: 0 4px 4px 0 rgba(47,47,47,0.3);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            font-size: 14px;
+            padding-bottom: 8px;
+        }
+
+        #submitButton > input:hover {
+            filter: brightness(120%);
+        }
+
+        #submitButton > input:active {
+            opacity: .8;
+        }
+
+        #securityNotice {
+            position: absolute;
+            width: 273px;
+            left: 50%;
+            top: calc(45% + 200px);
+            background-color: rgba(183, 58, 58, 0.67058823529);
+            padding: 10px 25px;
+            text-align: left;
+            transform: translateX(-50%);
+        }
+
+        #securityNotice > .title {
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        #securityNotice > div:last-child {
+            margin-top: 9px;
+        }
+
+
+        #error button.close:hover, button.close:focus, button.close:active {
+            color: #ea8d8dcc;
+        }
+        
+        #error button.close {
+            border: none;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            opacity: 1;
+            outline: none;
+            background: none;
+            color: #e4e4e4dd;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        #error span.sr-only {
+            display: none;
+        }
+
+        #version:before {
+            content: "v";
+        }
+
+        #version {
+            transform: translateY(20px);
+            font-size: 10px;
+            font-family: consolas;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        #userIDField {
+            text-transform: uppercase;
+        }
+
+        #error > .alert.alert-success {
+            background-color: rgba(69, 223, 86, 0.45);
+        }
+
+        #error > .alert.alert-success button.close:hover, 
+        #error > .alert.alert-success button.close:focus, 
+        #error > .alert.alert-success button.close:active {
+            color: rgba(69, 223, 86, 0.45);
+        }
+
 /* erdikha login css */
 * {
     box-sizing: border-box;
