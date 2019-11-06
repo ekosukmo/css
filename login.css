@@ -1,0 +1,388 @@
+/* erdikha login css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+/*  width: 100%;
+    height: 100%; */
+    
+}
+body {
+    background:  #000; 
+    color:  #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family: "Lato", "Lucida Grande", Tahoma, Sans-Serif;
+}
+.wrap {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    height: 100vh;
+    align-items: center;
+/*  padding: 20px 0 20px 25px; */
+}
+.login-col {
+    flex: 0 0 30%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+    border-right: 1px solid #FFD753;
+
+}
+.section.top {
+    position: relative;
+    top: 0px;;
+    margin-bottom: 10px;
+    align-self: stretch;
+    position: relative;
+}
+.section.top > .left {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section.top > .left > img {
+    max-width: 100%;
+}
+.section.top > .right {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 12px;
+    color: #D2D2D2;
+}
+.section.bottom {
+    bottom: -30px;
+    position: relative;
+    display: flex;
+    align-self: stretch;
+}
+.section.bottom > .left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.section.bottom > .left > h3, .section.bottom > .right > .hotline {
+    color: #FFD753;
+    font-size: 15px;
+}
+.section.bottom > .left > p {
+    font-size: 10px;
+}
+.section.bottom > .right {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.section.bottom > .right > .hotline {
+    text-align: right;
+}
+.showcase-col {
+    flex: 1 1;
+    background: #000;
+}
+.form {
+    z-index: 15;
+    height: auto;
+    min-width: 350px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px auto;
+    overflow: hidden;
+/*  border-right: 1px solid #FFD753; */
+/*  flex-direction: column; */
+    padding-right: 20px;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+/*   justify-content: space-between; */
+  margin: 0 0 20px;
+}
+.form-group:last-child {
+  margin: 0;
+}
+.form-group label {
+  display: block;
+  margin: 0 0 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+/*   text-transform: uppercase; */
+  letter-spacing: .2em;
+}
+.form-group input {
+  outline: none;
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  color: #707070;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+}
+.form-group input:focus {
+    color: #707070;
+}
+.form-group button {
+  outline: none;
+  background: transparent;
+  width: 100%;
+  border: 1px solid #DBB947;
+  border-radius: 4px;
+  padding: 12px 20px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+form.form-content {
+    padding: 5px 10px;
+}
+input[type="text"], input[type="password"] {
+    border-bottom: 1px solid #707070; 
+    border-radius: 0;
+    color: #C2C2C2;
+    padding: 5px 0;
+}
+.form-group .form-remember {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.form-group label.form-remember {
+    font-size: 12px;
+    color: #8B8686;
+    transform: translateY(4px)
+
+/*   position: relative; */
+/*   transform: translateY(50%); */
+/*   line-height: 24px; */
+}
+.form-group .form-remember input[type='checkbox'] {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+}
+.form-group.bottom {
+    display: flex;
+    color: #8B8686;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.bottom-left, .bottom-right {
+}
+.bottom-left {}
+.bottom-right {}
+.bottom-left > label.form-remember {
+    color: black
+    margin-right: 0;
+    padding-right: 0;
+}
+.bottom-right > a.form-recovery {
+  font-size: 12px;
+  color: #8B8686;
+  text-decoration: none;
+  display: inline-block;
+  text-align: right;
+}
+.form-header h1 {
+  padding: 4px 0;
+  color: #FFE445;
+  font-size: 43px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+h1.aonline, p.slogan {
+    text-align: center;
+}
+.form-header > p.slogan {
+    font-size: 11px;
+    padding-top:5px;
+    margin: 0 auto;
+
+}
+.logo {
+    width: 146px;
+    margin: 10px auto;
+}
+.logo > img {
+    max-width: 100%;
+    height: auto;
+}
+.form-panel {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #FFE445;
+  border-radius: 10px;
+  min-width: 300px;
+  box-sizing: border-box;
+/*   max-width: 80%; */
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*  height: 100vh; */
+    justify-content: center;
+    font-family: "Lato";
+}
+.header > h1 {
+    color: #FFE445;
+    font-size: 43px;
+    font-weight: 900;
+    line-height: 1.25;
+    padding: 0px 20px;
+}
+.header > .logo {
+    width: 300px;
+    margin: 62px auto;
+}
+.header > .brand > h2 {
+    color: #FFD753;
+    font-size: 41px;
+    line-height: 49px;
+}
+.header > .brand p {
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+}
+.form-header {
+  margin: 10px 0 40px;
+}
+
+
+@media(min-width: 961px) and (max-width:1200px)  {
+.header > h1.aonline {
+        font-size: 40px;
+        /* color:  blue; */
+}
+.header > .logo {
+    width: 240px;
+}
+.header > .brand > h2 {
+    font-size:  34px;
+}
+.header > .brand p {
+    font-size:  19px;
+}
+}
+
+@media(min-width: 736px) and (max-width: 960px) {
+.header > h1.aonline {
+        font-size: 32px;
+        /* color:  red; */
+}
+.header > .logo {
+    width: 200px;
+}
+.header > .brand > h2 {
+    font-size:  28px;
+}
+.header > .brand > p {
+    font-size:  15px;
+}
+}
+
+@media(max-width: 735px) {
+    .showcase-col {
+        display: none;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .section.bottom {
+/*  bottom: -80px; */
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    }
+    .section.top {
+    position: relative;
+/*  top: 0px; */
+    margin-bottom: 10px;
+    align-self: stretch;
+/*  justify-content: flex-start; */
+    position: relative;
+    }
+    .section.top > .left, 
+    .section.top > .right {
+        font-size: 10px;
+    }
+    .form-header > .logo {
+        width: 90px;
+    }
+    .login-col {
+        border:  none;
+    }
+}
+@media(max-width: 735px) and (min-height:550px){
+    .section.bottom > .left > h3, .section.bottom > .right > .hotline {
+        font-size: 12px;
+    }
+    .section.bottom {
+    bottom: -40px;
+    position: relative;
+    }
+    .section.top {
+    position: relative;
+    top: -20px;
+    margin-bottom: 10px;
+    align-self: stretch;
+/*  justify-content: flex-start; */
+    position: relative;
+    }
+}
+@media(max-width: 735px) and (max-height:550px) {
+    .section.bottom > .left > h3, .section.bottom > .right > .hotline {
+        font-size: 10px;
+    }
+    .section.bottom > .left > p {
+        font-size: 5px;
+    }
+    .section.bottom > .right > .phone {
+        font-size: 9px;
+    }
+    .section.bottom {
+    bottom: -25px;
+    position: relative;
+    }
+    .section.top {
+    position: relative;
+    top: -10px;
+    margin-bottom: 10px;
+    align-self: stretch;
+/*  justify-content: flex-start; */
+    position: relative;
+    }
+    .form-header > .logo {
+        display: none;
+    }
+}
